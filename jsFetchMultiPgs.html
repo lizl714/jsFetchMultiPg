@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Recent Activity</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+<script type="text/javascript" src="jsFetchMultiPgs.js" async></script>
+</head>
+<body>
+    <h1 align="center" style="height:50px;">
+    <span style="display:block;">
+        <span style="margin:auto;">Recent Activity</span>
+    </span>
+    </h1>
+
+    <form action="">
+    <h2 align="center" style="height:50px;">
+        <span style="display:block;">
+            <span style="margin:auto;">User ID: </span>
+            <input id="userid" type="text" required style="height:100%;vertical-align: middle;display: inline-block; "/>
+            <input type="button" value="Retrieve" id="usr" style="height:100%;vertical-align: middle;display: inline-block; "/>
+            <input type="button" value="Clear" id="clr" style="height:100%;vertical-align: middle;display: inline-block; "/>
+        </span>
+    </h2>
+    </form>
+    <br />
+
+    <div class="container">
+       <table id="actv" class="display" width="100%"></table>
+    </div>
+</body>
+</html>
